@@ -2,6 +2,13 @@ name: Collect listings
 
 # Runs itself every night at 04:10 Irish time and opens a pull request with
 # whatever it found. Nothing reaches the live site until Eddie merges it.
+#
+# Ordering matters here. The collector treats a source that returns zero shows
+# as broken — an empty venue and a dead adapter look identical from the outside,
+# which is how the Craic Den domain problem hid for a week. But that alarm must
+# not swallow the listings: the pull request opens FIRST, carrying the problem
+# in its title and body, and only then does the run go red. A broken venue
+# should cost you that venue, not the whole night's update.
 on:
   schedule:
     - cron: "10 3 * * *"   # 03:10 UTC — 04:10 Irish summer time
@@ -22,7 +29,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       # Playwright is only needed here, for the venue sites that render
       # their listings with JavaScript. The site build itself stays dependency-free.
@@ -31,11 +38,31 @@ jobs:
           npm install --no-save playwright
           npx playwright install --with-deps chromium
 
+      # Exits 0 even when a source is silent — it records the problem instead.
+      # A non-zero exit here means the collector genuinely crashed.
       - name: Collect
         run: node scripts/scrape.mjs ${{ github.event.inputs.only && format('--only {0}', github.event.inputs.only) || '' }}
 
+      # This one SHOULD block the pull request: it fails when a row is missing
+      # its source URL, and an unsourced listing must never reach the site.
       - name: Check what came back
         run: node scripts/check.mjs
+
+      # The collector wrote the title and body into RUNNER_TEMP, so the venue
+      # knowledge stays in one place rather than being duplicated in YAML.
+      - name: Read the collector's report
+        id: report
+        run: |
+          if [ -f "${RUNNER_TEMP}/pr-title.txt" ]; then
+            echo "title=$(cat "${RUNNER_TEMP}/pr-title.txt")" >> "$GITHUB_OUTPUT"
+          else
+            echo "title=Listings update — run ${{ github.run_number }}" >> "$GITHUB_OUTPUT"
+          fi
+          {
+            echo 'body<<COLLECTOR_PR_BODY'
+            cat "${RUNNER_TEMP}/pr-body.md" 2>/dev/null || echo "Automatic listings collection. Review before merging."
+            echo 'COLLECTOR_PR_BODY'
+          } >> "$GITHUB_OUTPUT"
 
       - name: Open a pull request with the changes
         uses: peter-evans/create-pull-request@v6
@@ -43,16 +70,18 @@ jobs:
           commit-message: "Listings update ${{ github.run_number }}"
           branch: listings/auto
           delete-branch: true
-          title: "Listings update — ${{ github.run_number }}"
-          body: |
-            Automatic listings collection.
-
-            Review before merging. Anything the collector wasn't confident about
-            is marked `"status": "needs_review"` in `data/shows.json` and shows a
-            warning banner on its page until you clear it.
-
-            Check especially:
-            - new shows with a `needs_review` status
-            - prices or times that changed
-            - anything from a third-party source rather than the venue's own site
+          title: ${{ steps.report.outputs.title }}
+          body: ${{ steps.report.outputs.body }}
           labels: listings
+
+      # Now, and only now, go red. The listings are already through.
+      - name: Fail if any source went silent
+        if: always()
+        run: |
+          if [ -f "${RUNNER_TEMP}/collector-silent" ]; then
+            echo "One or more sources returned no listings:"
+            cat "${RUNNER_TEMP}/collector-silent"
+            echo "::error::A source collected nothing. The pull request is open and mergeable — it is just missing those venues."
+            exit 1
+          fi
+          echo "Every source returned listings."
