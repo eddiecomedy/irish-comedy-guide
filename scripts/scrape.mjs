@@ -121,7 +121,10 @@ const ADAPTERS = {
     url: "https://craicdencomedyclub.com/all-events/",
     needs: "browser",
     loadMore: { selector: "button.defaultButton", maxRounds: 30, settleMs: 2000 },
-    collectInPage() {
+    // Must be a function *expression*, not object-method shorthand: this gets
+    // serialised and re-parsed inside the browser, and `collectInPage() {…}`
+    // is not a valid standalone expression on the other side.
+    collectInPage: function () {
       // Runs inside the page. Mechanical only — no interpretation.
       const raw = document.body.innerText;
       const start = raw.indexOf("Our comedians have been seen on");
@@ -293,9 +296,10 @@ async function makeBrowser() {
       if (loadMore) {
         let last = -1;
         for (let i = 0; i < loadMore.maxRounds; i++) {
-          const count = await page.evaluate(fn => new Function(`return (${fn})()`)().length,
-            collectInPage.toString()).catch(() => -1);
-          if (count === last) break;            // button may persist past the last page
+          const count = await page.evaluate(collectInPage).then(r => r.length).catch(() => -1);
+          // The button stays in the DOM after the final page — confirmed on
+          // Craic Den — so stop when the count stops growing, not when it goes.
+          if (count === last) break;
           last = count;
           const btn = await page.$(loadMore.selector);
           if (!btn) break;
@@ -303,7 +307,7 @@ async function makeBrowser() {
           await page.waitForTimeout(loadMore.settleMs);
         }
       }
-      return await page.evaluate(fn => new Function(`return (${fn})()`)(), collectInPage.toString());
+      return await page.evaluate(collectInPage);
     } finally { await page.close(); }
   };
 
