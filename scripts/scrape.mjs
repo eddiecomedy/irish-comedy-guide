@@ -120,7 +120,7 @@ const ADAPTERS = {
     venue: "craicden",
     url: "https://craicdencomedyclub.com/all-events/",
     needs: "browser",
-    loadMore: { selector: "button.defaultButton", maxRounds: 30, settleMs: 2000 },
+    loadMore: { selector: "button.defaultButton", maxRounds: 40, settleMs: 3500 },
     // Must be a function *expression*, not object-method shorthand: this gets
     // serialised and re-parsed inside the browser, and `collectInPage() {…}`
     // is not a valid standalone expression on the other side.
@@ -294,13 +294,22 @@ async function makeBrowser() {
       await page.goto(url, { waitUntil: "networkidle", timeout: 45000 });
       await page.waitForTimeout(1500);
       if (loadMore) {
-        let last = -1;
+        // The button stays in the DOM after the final page — confirmed on Craic
+        // Den — so we stop when the count stops growing, not when it goes away.
+        //
+        // But "unchanged once" is not "finished": a slow AJAX page can miss a
+        // settle window and look done while there is more to come. The first
+        // CI run stopped at 86 of 107 rows for exactly that reason. So require
+        // two consecutive rounds with no growth before believing it.
+        let last = -1, quiet = 0;
         for (let i = 0; i < loadMore.maxRounds; i++) {
           const count = await page.evaluate(collectInPage).then(r => r.length).catch(() => -1);
-          // The button stays in the DOM after the final page — confirmed on
-          // Craic Den — so stop when the count stops growing, not when it goes.
-          if (count === last) break;
-          last = count;
+          if (count === last) {
+            if (++quiet >= 2) break;
+          } else {
+            quiet = 0;
+            last = count;
+          }
           const btn = await page.$(loadMore.selector);
           if (!btn) break;
           await btn.click().catch(() => {});
