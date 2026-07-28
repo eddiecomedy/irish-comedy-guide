@@ -1,0 +1,136 @@
+{
+  "news": [],
+  "resources": [
+    [
+      "Insurance & events",
+      "🛡",
+      [
+        [
+          "EventInsure.ie",
+          "Public liability insurance for live performance and one-off events."
+        ]
+      ]
+    ],
+    [
+      "Community & venues",
+      "🎤",
+      [
+        [
+          "Comedy Clubs Directory",
+          "Every active comedy room in Ireland — see the Comedy Clubs page."
+        ],
+        [
+          "Irish Comedy Forum",
+          "Independent Facebook group: open spots, promoter callouts, scene announcements."
+        ]
+      ]
+    ],
+    [
+      "Industry support",
+      "🤝",
+      [
+        [
+          "Minding Creative Minds",
+          "Free 24/7 wellbeing support plus legal and accounting guidance for creatives."
+        ],
+        [
+          "Theatre Forum",
+          "The resource organisation for Ireland's performing arts community."
+        ],
+        [
+          "Night-Time Economy Initiatives",
+          "Government supports for late-night culture and events."
+        ]
+      ]
+    ],
+    [
+      "Safer spaces",
+      "✚",
+      [
+        [
+          "Comedy Safety Standards",
+          "Performer-led campaign for a safer, more inclusive comedy scene."
+        ],
+        [
+          "Safe Gigs Ireland",
+          "Promoting safety at live events across the country."
+        ],
+        [
+          "Good Night Out",
+          "Training for venues on preventing and responding to harassment."
+        ]
+      ]
+    ],
+    [
+      "Representation",
+      "★",
+      [
+        [
+          "Aviary Talent",
+          "Agency representing Irish comedians."
+        ],
+        [
+          "Lisa Richards",
+          "One of Ireland's leading talent agencies."
+        ]
+      ]
+    ],
+    [
+      "Development",
+      "✎",
+      [
+        [
+          "Craic Den Comedy Courses",
+          "Stand-up courses for new and developing acts."
+        ],
+        [
+          "MOB Theatre",
+          "Improv and sketch training."
+        ],
+        [
+          "Newscheck Comedy",
+          "Topical writing room for new comedy writers."
+        ],
+        [
+          "The Reviews Hub",
+          "Get your show reviewed."
+        ]
+      ]
+    ]
+  ],
+  "tourNews": {
+    "lead": {
+      "com": "Deirdre O'Kane",
+      "kicker": "Tour news",
+      "head": "Deirdre O'Kane works up a new hour in Cork — then takes two nights at Dolan's",
+      "standfirst": "The work-in-progress show at the CoCo Comedy Club in September has already sold out, and she follows it with back-to-back nights on the Dock Road in Limerick in October. Work-in-progress shows are where the new material gets its bruises — worth catching before it's a finished tour.",
+      "cta": "See all Deirdre O'Kane dates"
+    },
+    "items": [
+      {
+        "com": "Michael Akadiri",
+        "k": "Just announced",
+        "t": "Don't Call Me Uncle! comes to the Craic Den",
+        "m": "The Workman's Club · December"
+      },
+      {
+        "com": "Mike Rice",
+        "k": "On sale now",
+        "t": "Cruel Little Man plays City Limits in Cork",
+        "m": "Coburg Street · October"
+      },
+      {
+        "com": "Shane Todd",
+        "k": "Extra date",
+        "t": "New date added at Dolan's, Limerick",
+        "m": "Dock Road · September"
+      },
+      {
+        "com": "David O'Doherty",
+        "k": "Looking ahead",
+        "t": "David O'Doherty opens 2027 in Limerick",
+        "m": "Dolan's · January"
+      }
+    ]
+  }
+}
