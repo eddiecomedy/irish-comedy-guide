@@ -1,0 +1,16 @@
+{
+  "name": "irish-comedy-guide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Irish Comedy Guide — live comedy listings for all 32 counties. Static site, no framework, no dependencies.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "dev": "node src/build.mjs && node scripts/serve.mjs",
+    "scrape": "node scripts/scrape.mjs",
+    "scrape:dry": "node scripts/scrape.mjs --dry-run",
+    "check": "node scripts/check.mjs"
+  }
+}
