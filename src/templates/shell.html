@@ -1,0 +1,476 @@
+<!-- ===== reusable logo symbol ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="isleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2FA96B"/><stop offset="1" stop-color="#0A5C37"/>
+    </linearGradient>
+    <symbol id="icgMark" viewBox="-4 0 104 130">
+      <path fill="url(#isleGrad)" stroke="rgba(255,255,255,.14)" stroke-width="1.4" stroke-linejoin="round" d="
+        M58 6 L79 11 L85 22 L89 27 L84 29 L91 37 L88 40 L79 46 L76 48 L78 53 L81 65 L78 66 L80 69 L82 77 L79 88
+        L75 101 L65 103 L61 101 L49 108 L42 111 L37 118 L29 120 L14 122 L19 119 L7 119 L15 114 L4 110 L12 105
+        L3 103 L13 98 L12 94 L28 90 L11 87 L20 79 L24 72 L29 69 L10 65 L13 58 L18 52 L6 48 L11 38 L14 37 L26 40
+        L36 37 L43 32 L38 30 L32 26 L38 22 L41 13 L47 11 L53 9 Z"/>
+      <circle cx="41.5" cy="54" r="4.2" fill="#F26522"/>
+      <circle cx="60.5" cy="51.5" r="4.2" fill="#F26522"/>
+      <path d="M34 65 q16 16 31 3" fill="none" stroke="#F26522" stroke-width="5.8" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ===== top strip ===== -->
+<div class="topstrip">
+  <div class="wrap">
+    <span class="live"><span class="dot"></span> Updated Everyday<span class="tscount"> · <span id="ts-count">—</span> shows listed</span></span>
+    <span class="rt">
+      <a href="#" onclick="go('submit');return false">Add your gig — free</a>
+      <a href="#" onclick="go('resources');return false">For comedians</a>
+    </span>
+  </div>
+</div>
+
+<!-- ===== header ===== -->
+<header id="hdr">
+  <div class="hwrap">
+    <a class="brand" href="#" onclick="go('home');return false">
+      <svg class="mark" viewBox="-4 0 104 130" aria-label="Irish Comedy Guide"><use href="#icgMark"/></svg>
+      <span class="bword">
+        <span class="l1">IRISH <span class="g">COMEDY</span> GUIDE</span>
+        <span class="l2">Live comedy · All 32 counties</span>
+      </span>
+    </a>
+    <nav id="nav">
+      <button data-v="home" class="active" onclick="go('home')">Comedy Shows</button>
+      <button data-v="comedians" onclick="go('comedians')">Comedians</button>
+      <button data-v="clubs" onclick="go('clubs')">Comedy Clubs</button>
+      <button data-v="map" onclick="go('map')">Comedy Map</button>
+      <div class="moredd">
+        <button id="morebtn" onclick="toggleMore(event)">More ▾</button>
+        <div class="ddmenu" id="ddmenu">
+          <button onclick="go('resources')"><span class="ic">◈</span> Resources</button>
+          <button onclick="go('venues')"><span class="ic">◉</span> All Venues</button>
+          <button onclick="go('news')"><span class="ic">✦</span> News</button>
+          <button onclick="go('videos')"><span class="ic">▶</span> Videos</button>
+          <button onclick="go('submit')"><span class="ic">＋</span> Submit a Show</button>
+        </div>
+      </div>
+      <a class="btn btn-orange btn-sm navcta" href="#" onclick="go('submit');return false">Add a show</a>
+    </nav>
+    <button class="burger" onclick="openDrawer()" aria-label="Menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" onclick="if(event.target===this)closeDrawer()">
+  <div class="panel">
+    <div class="dhead">Browse</div>
+    <button onclick="go('home')">Comedy Shows</button>
+    <button onclick="go('comedians')">Comedians</button>
+    <button onclick="go('clubs')">Comedy Clubs</button>
+    <button onclick="go('map')">Comedy Map</button>
+    <div class="dhead">More</div>
+    <button onclick="go('resources')">Resources</button>
+    <button onclick="go('venues')">All Venues</button>
+    <button onclick="go('news')">News</button>
+    <button onclick="go('videos')">Videos</button>
+    <button onclick="go('submit')">Submit a Show</button>
+  </div>
+</div>
+
+<!-- ================= HOME ================= -->
+<main id="view-home">
+  <div class="hero">
+    <div class="stage" id="stage">
+      <div class="stg-layer" id="pl-photo"><div class="stg-photo"></div></div>
+      <div class="stg-layer" id="pl-rig"><div class="stg-glow"></div></div>
+      <div class="stg-layer" id="pl-mic">
+        <svg class="stg-sil" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+          <defs>
+            <radialGradient id="floorGlow" cx=".5" cy=".5">
+              <stop offset="0" stop-color="#F26522" stop-opacity=".42"/>
+              <stop offset=".55" stop-color="#F26522" stop-opacity=".13"/>
+              <stop offset="1" stop-color="#F26522" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="silSoft" x="-10%" y="-10%" width="120%" height="120%">
+              <feGaussianBlur stdDeviation="0.9"/>
+            </filter>
+          </defs>
+
+          <ellipse cx="800" cy="604" rx="470" ry="52" fill="url(#floorGlow)"/>
+
+          <g filter="url(#silSoft)" fill="#04090F">
+            <!-- high stool -->
+            <ellipse cx="900" cy="330" rx="92" ry="19"/>
+            <rect x="808" y="330" width="184" height="15"/>
+            <ellipse cx="900" cy="345" rx="92" ry="19"/>
+            <path d="M866 350 L838 566 L852 566 L880 350 Z"/>
+            <path d="M934 350 L962 566 L948 566 L920 350 Z"/>
+            <path d="M846 354 L800 598 L819 598 L864 354 Z"/>
+            <path d="M954 354 L1000 598 L981 598 L936 354 Z"/>
+            <ellipse cx="900" cy="598" rx="112" ry="9" opacity=".9"/>
+
+            <!-- mic stand -->
+            <ellipse cx="690" cy="600" rx="80" ry="12"/>
+            <path d="M612 600 C 620 574 760 574 768 600 Z"/>
+            <rect x="683" y="300" width="14" height="300" rx="3"/>
+            <rect x="673" y="350" width="34" height="32" rx="7"/>
+            <rect x="685" y="194" width="10" height="112" rx="4"/>
+            <g transform="rotate(-15 690 206)">
+              <rect x="679" y="176" width="22" height="38" rx="8"/>
+              <rect x="675" y="116" width="30" height="66" rx="11"/>
+              <ellipse cx="690" cy="108" rx="31" ry="35"/>
+            </g>
+          </g>
+
+          <g filter="url(#silSoft)">
+            <ellipse cx="900" cy="470" rx="66" ry="14" fill="none" stroke="#04090F" stroke-width="9"/>
+            <path d="M703 218 C 750 292 654 352 700 426 C 744 496 656 548 634 598"
+                  fill="none" stroke="#04090F" stroke-width="6" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <div class="stg-haze"></div>
+      <div class="grain"></div>
+      <div class="vig"></div>
+    </div>
+    <div class="wrap hgrid">
+      <div>
+        <h1>Every laugh in Ireland,<br><em>listed.</em></h1>
+        <p class="sub">Club nights, tours, open mics and improv — from Dublin basements to Belfast theatres. One guide, all 32 counties, updated everyday.</p>
+        <div class="stats">
+          <div class="stat"><b id="st-shows">—</b><span>shows this fortnight</span></div>
+          <div class="stat"><b id="st-venues">—</b><span>venues listed</span></div>
+          <div class="stat"><b>32</b><span>counties covered</span></div>
+        </div>
+      </div>
+      <div class="findbox">
+        <div class="fbtop">
+          <h2>Find live comedy</h2>
+          <p>Tell us where and when — we'll do the rest.</p>
+        </div>
+        <div class="fbbody">
+          <div class="fld">
+            <label for="h-city">Where are you?</label>
+            <select id="h-city">
+              <option value="">Anywhere in Ireland</option>
+              <option>Dublin</option><option>Cork</option><option>Galway</option>
+              <option>Limerick</option><option>Belfast</option>
+            </select>
+          </div>
+          <div class="fld">
+            <label>When?</label>
+            <div class="chipset" id="h-when-set">
+              <button data-w="tonight" onclick="pickWhen(this)">Tonight</button>
+              <button data-w="weekend" onclick="pickWhen(this)">Weekend</button>
+              <button data-w="week" onclick="pickWhen(this)">7 days</button>
+            </div>
+            <div class="ordiv"><span>or planning ahead?</span></div>
+            <select id="h-month" onchange="pickMonth()"></select>
+          </div>
+          <div class="fld">
+            <label for="h-type">What kind of show?</label>
+            <select id="h-type">
+              <option value="">Any kind of comedy</option>
+              <option>Club night</option><option>Tour show</option><option>Open mic</option>
+              <option>Improv</option><option>Work in progress</option>
+            </select>
+          </div>
+          <button class="btn btn-orange btn-lg go" onclick="findGigs()">Find gigs →</button>
+          <div class="fnote">Free listings · No booking fees · Updated Everyday</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quickbar">
+    <div class="wrap">
+      <span class="lbl">Popular</span>
+      <button class="qchip hot" onclick="quick({when:'tonight'})">🔥 On tonight</button>
+      <button class="qchip" onclick="quick({when:'weekend'})">This weekend</button>
+      <button class="qchip" id="q-nextmonth"></button>
+      <button class="qchip" onclick="quick({free:true})">Free entry</button>
+      <button class="qchip" onclick="quick({city:'Dublin'})">Dublin</button>
+      <button class="qchip" onclick="quick({city:'Cork'})">Cork</button>
+      <button class="qchip" onclick="quick({city:'Galway'})">Galway</button>
+      <button class="qchip" onclick="quick({city:'Belfast'})">Belfast</button>
+      <button class="qchip" onclick="quick({type:'Open mic'})">Open mics</button>
+      <button class="qchip" onclick="quick({type:'Tour show'})">Tour shows</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="block" style="margin-top:52px">
+      <div class="sechead">
+        <div class="txt">
+          <span class="kicker">Featured venue · 7 nights a week</span>
+          <h2>Craic Den Comedy Club</h2>
+        </div>
+        <a class="more" href="#" onclick="openVenue('craicden');return false">All Craic Den shows →</a>
+      </div>
+      <div class="frow" id="frow"></div>
+    </section>
+
+    <section class="block">
+      <div class="sechead">
+        <div class="txt">
+          <span class="kicker">On the road</span>
+          <h2>Irish comedians on tour</h2>
+        </div>
+        <a class="more" href="#" onclick="go('comedians');return false">All comedians →</a>
+      </div>
+      <div class="tourgrid" id="tourrow"></div>
+    </section>
+
+    <section class="block" id="listings-sec">
+      <div class="sechead">
+        <div class="txt">
+          <span class="kicker">What's on</span>
+          <h2>Upcoming shows</h2>
+        </div>
+        <a class="more" href="#" onclick="go('map');return false">See them on the map →</a>
+      </div>
+      <div class="fbar">
+        <select id="f-city" onchange="render()">
+          <option value="">All locations</option>
+          <option>Dublin</option><option>Cork</option><option>Galway</option>
+          <option>Limerick</option><option>Belfast</option>
+        </select>
+        <select id="f-type" onchange="render()">
+          <option value="">All show types</option>
+          <option>Club night</option><option>Tour show</option><option>Open mic</option>
+          <option>Improv</option><option>Work in progress</option>
+        </select>
+        <select id="f-when" onchange="render()">
+          <option value="">Any date</option>
+          <option value="tonight">Tonight</option>
+          <option value="weekend">This weekend</option>
+          <option value="week">Next 7 days</option>
+        </select>
+        <label class="switch"><input type="checkbox" id="f-free" onchange="render()"><span class="track"></span> Free entry</label>
+        <div class="searchwrap">
+          <span class="si">⌕</span>
+          <input type="search" id="f-q" placeholder="Search shows, venues or acts…" oninput="render()">
+        </div>
+      </div>
+      <div class="resbar">
+        <div class="count" id="count"></div>
+        <button class="clearf hidden" id="clearf" onclick="clearFilters()">Clear filters ✕</button>
+      </div>
+      <div id="listings"></div>
+    </section>
+
+    <section class="block" id="tournews-sec">
+      <div class="sechead">
+        <div class="txt">
+          <span class="kicker">Tour news</span>
+          <h2>Just announced</h2>
+        </div>
+        <a class="more" href="#" onclick="go('news');return false">All comedy news →</a>
+      </div>
+      <div class="tnwrap" id="tourwrap"></div>
+    </section>
+
+    <section class="newsband">
+      <div class="nt">
+        <h2>The week's best comedy, in your inbox every Thursday.</h2>
+        <p>One email. What's on, where, and what's actually worth it. No spam, unsubscribe anytime.</p>
+      </div>
+      <form class="nform" onsubmit="nsub(event)">
+        <input type="email" placeholder="you@example.com" required>
+        <button class="btn btn-orange btn-lg" type="submit">Subscribe</button>
+      </form>
+      <span class="nok" id="nok">Lovely — you're on the list. (Prototype: nothing was actually sent.)</span>
+    </section>
+  </div>
+</main>
+
+<!-- ================= COMEDIANS ================= -->
+<main id="view-comedians" class="hidden">
+  <div class="phead"><div class="wrap">
+    <span class="kicker">The talent</span>
+    <h1>Irish comedians</h1>
+    <p>The people doing the damage — from arena headliners to the circuit's rising stars. Tap an act for their bio, clips and upcoming dates.</p>
+  </div></div>
+  <div class="wrap pbody">
+    <section class="block" style="margin-top:0">
+      <div class="sechead"><div class="txt"><span class="kicker">Tickets on sale</span><h2>On tour now</h2></div></div>
+      <div class="tourgrid" id="tourfull"></div>
+    </section>
+    <section class="block">
+      <div class="sechead"><div class="txt"><span class="kicker">The directory</span><h2>All comedians</h2></div></div>
+      <div class="tourgrid" id="cdir"></div>
+    </section>
+  </div>
+</main>
+
+<!-- ================= COMEDY CLUBS ================= -->
+<main id="view-clubs" class="hidden">
+  <div class="phead"><div class="wrap">
+    <span class="kicker">The rooms</span>
+    <h1>Comedy clubs</h1>
+    <p>Ireland's regular rooms — clubs with weekly (or nightly) shows you can count on. Tap a club for its upcoming listings, or find them all on the Comedy Map.</p>
+  </div></div>
+  <div class="wrap pbody">
+    <div id="clubgrid"></div>
+    <div class="allvenues">
+      <div class="av-txt">
+        <h3>Looking for a theatre or a one-off?</h3>
+        <p>Tour shows and festival nights happen in venues that aren't full-time comedy clubs — Vicar Street, the 3Olympia, arts centres and music venues all over the country.</p>
+      </div>
+      <button class="btn btn-orange btn-lg" onclick="go('venues')">All venues — theatres &amp; more →</button>
+    </div>
+  </div>
+</main>
+
+<!-- ================= COMEDY MAP ================= -->
+<main id="view-map" class="hidden">
+  <div class="phead"><div class="wrap">
+    <span class="kicker">Find your local</span>
+    <h1>Comedy map</h1>
+    <p>Every regular comedy club in Ireland, on one map. Zoom in, tap a marker, and jump straight to that club's listings.</p>
+  </div></div>
+  <div class="wrap pbody">
+    <div class="mapcard" style="margin-top:0">
+      <div id="map"></div>
+      <div class="maplegend">
+        <span class="li"><span class="sw" style="background:#F26522"></span> Featured venue</span>
+        <span class="li"><span class="sw" style="background:#0F7A4A"></span> Comedy club</span>
+        <span style="margin-left:auto">Map data © OpenStreetMap contributors © CARTO</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ================= ALL VENUES ================= -->
+<main id="view-venues" class="hidden">
+  <div class="phead"><div class="wrap">
+    <span class="kicker">Everywhere comedy happens</span>
+    <h1>All venues</h1>
+    <p>The regular clubs plus the theatres and music venues that host tours and one-off nights.</p>
+  </div></div>
+  <div class="wrap pbody">
+    <div id="vgrid"></div>
+  </div>
+</main>
+
+<!-- ================= NEWS ================= -->
+<main id="view-news" class="hidden">
+  <div class="phead"><div class="wrap">
+    <span class="kicker">The scene</span>
+    <h1>Comedy news</h1>
+    <p>What's happening in Irish comedy — announcements, tours, festivals and scene news. (Sample headlines for the prototype.)</p>
+  </div></div>
+  <div class="wrap pbody">
+    <div class="newsgrid" id="newsgrid" style="margin-top:0"></div>
+  </div>
+</main>
+
+<!-- ================= VIDEOS ================= -->
+<main id="view-videos" class="hidden">
+  <div class="phead"><div class="wrap">
+    <span class="kicker">Watch</span>
+    <h1>Videos</h1>
+    <p>Clips from the Craic Den Comedy Club stage — new sets every week on the <a href="https://www.youtube.com/@craicdencomedyclub" target="_blank" rel="noopener" style="color:var(--orange-lt);font-weight:800">Craic Den YouTube channel</a>. In the finished site, every clip automatically appears on that comedian's page too.</p>
+  </div></div>
+  <div class="wrap pbody">
+    <div class="vidgrid" id="vidgrid" style="margin-top:0"></div>
+  </div>
+</main>
+
+<!-- ================= RESOURCES ================= -->
+<main id="view-resources" class="hidden">
+  <div class="phead"><div class="wrap">
+    <span class="kicker">For the industry</span>
+    <h1>Resources</h1>
+    <p>For comedians, promoters and venues: the organisations, services and communities that support live comedy in Ireland.</p>
+  </div></div>
+  <div class="wrap pbody">
+    <div class="rgrid" id="rlist"></div>
+  </div>
+</main>
+
+<!-- ================= SUBMIT ================= -->
+<main id="view-submit" class="hidden">
+  <div class="phead"><div class="wrap">
+    <span class="kicker">Promoters &amp; venues</span>
+    <h1>Submit a show</h1>
+    <p>Running a gig? Tell us and we'll list it — free, always. Listings are checked before publishing, usually within 24 hours.</p>
+  </div></div>
+  <div class="wrap pbody">
+    <div class="formcard">
+      <div class="frow2">
+        <div class="fld"><label>Show name</label><input placeholder="Friday Night Craic"></div>
+        <div class="fld"><label>Venue</label><input placeholder="The Workman's Club, Dublin"></div>
+      </div>
+      <div class="frow2">
+        <div class="fld"><label>Date</label><input placeholder="Fri 14 August"></div>
+        <div class="fld"><label>Start time</label><input placeholder="8.30pm"></div>
+      </div>
+      <div class="frow2">
+        <div class="fld"><label>Show type</label>
+          <select><option>Club night</option><option>Tour show</option><option>Open mic</option><option>Improv</option><option>Work in progress</option></select></div>
+        <div class="fld"><label>Ticket link</label><input placeholder="https://…"></div>
+      </div>
+      <div class="fld"><label>Line-up &amp; details</label><textarea rows="4" placeholder="Who's on, ticket price, anything else we should know."></textarea></div>
+      <button class="btn btn-orange btn-lg" onclick="event.preventDefault();alert('Prototype only — nothing was submitted.')">Submit listing</button>
+      <p class="note">Every submission goes into our review queue. We check the details, then publish — usually the same day.</p>
+    </div>
+  </div>
+</main>
+
+<!-- ================= MODAL / COOKIE ================= -->
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal" id="modal"></div>
+</div>
+
+<div class="cookie" id="cookie">
+  <b>Cookies &amp; comedy.</b>
+  <p>We use cookies to understand how the guide is used and — with your OK — to show you relevant shows elsewhere online.</p>
+  <div class="cbtns">
+    <button class="btn btn-navy btn-sm" onclick="cookie()">Accept all</button>
+    <button class="btn btn-ghost btn-sm" onclick="cookie()">Essential only</button>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="fbrand">
+          <svg viewBox="-4 0 104 130" style="height:58px"><use href="#icgMark"/></svg>
+          <span class="l1">IRISH <span class="g">COMEDY</span> GUIDE</span>
+        </div>
+        <p>Your guide to live comedy in Ireland — every club night, tour, open mic and improv show, across all 32 counties.</p>
+        <p style="color:var(--green-lt);font-weight:700;margin-top:10px">★ Updated Everyday.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#" onclick="go('home');return false">Comedy Shows</a></li>
+          <li><a href="#" onclick="go('comedians');return false">Comedians</a></li>
+          <li><a href="#" onclick="go('clubs');return false">Comedy Clubs</a></li>
+          <li><a href="#" onclick="go('map');return false">Comedy Map</a></li>
+          <li><a href="#" onclick="go('videos');return false">Videos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>For the trade</h4>
+        <ul>
+          <li><a href="#" onclick="go('submit');return false">Submit a show</a></li>
+          <li><a href="#" onclick="go('resources');return false">Resources</a></li>
+          <li><a href="#" onclick="go('venues');return false">All venues</a></li>
+          <li><a href="#" onclick="go('news');return false">News</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Advertise</h4>
+        <ul>
+          <li>Featured placement and advertising:</li>
+          <li><a href="#" style="color:var(--orange)">hello@irishcomedyguide.ie</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Irish Comedy Guide</span>
+      <span>Privacy · Cookies · Contact · Hero photo by <a href="https://unsplash.com/@ryanzspaulding" target="_blank" rel="noopener">Ryan Spaulding</a> on Unsplash</span>
+    </div>
+  </div>
+</footer>
