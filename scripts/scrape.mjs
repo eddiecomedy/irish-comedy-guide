@@ -28,8 +28,19 @@
    4. SILENCE IS A FAILURE. Added 28 July 2026 after the Craic Den incident:
       the club with the most listings of the twelve showed one show on the site,
       because nothing was collecting it and nothing said so. A source that
-      returns zero rows now fails the run loudly. An empty venue and a broken
+      returns zero rows is reported as broken. An empty venue and a broken
       adapter look identical from the outside, so we treat both as broken.
+
+      But reporting must not suppress. The first version of this guard called
+      process.exit(1), which killed the job before the pull-request step — so
+      one dead source withheld the good listings from every other source, and
+      turned "one venue is stale" into "tonight's update silently didn't
+      happen". Exactly the failure it was written to prevent.
+
+      So: this script exits 0 even when a source is silent. It writes the
+      problem into the pull-request body and drops a marker file, and the
+      workflow fails the run *after* the pull request is open. Loud and
+      non-blocking, in that order.
    ========================================================================== */
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
@@ -397,12 +408,11 @@ async function main() {
   const review = shows.filter(s => s.status === "needs_review");
   if (review.length) console.log(`  ${review.length} awaiting review`);
 
-  /* ---- silence is a failure -------------------------------------------
-     Every venue in ADAPTERS runs a regular comedy programme. If one of them
-     comes back with nothing, the adapter is broken, the site has changed, or
-     the domain has moved — not "there is no comedy this month". Say so, and
-     make the run fail, so it lands in the Actions log as red rather than as a
-     quiet pull request with a venue silently missing. */
+  /* ---- silence is a failure, but it must not be a blockage --------------
+     Every venue in ADAPTERS runs a regular comedy programme. If one comes back
+     with nothing, the adapter is broken, the site has changed, or the domain
+     has moved — not "there is no comedy this month". We say so loudly. We do
+     not stop the other venues' listings from reaching the pull request. */
   const silent = report.filter(r => !r.skipped && r.count === 0);
 
   if (!DRY) {
@@ -415,10 +425,56 @@ async function main() {
   if (silent.length) {
     console.error(`\n  ${silent.length} source${silent.length === 1 ? "" : "s"} returned nothing:`);
     for (const r of silent) console.error(`    ${r.name} — ${r.error || "fetched the page, found zero shows"}`);
-    console.error("  A source with no shows is treated as broken. Check the adapter and the site.\n");
-    process.exit(1);
+    console.error("  A source with no shows is treated as broken. Check the adapter and the site.");
+    // Surface each one as a GitHub Actions annotation too.
+    for (const r of silent) {
+      console.log(`::error title=${r.name} collected nothing::${r.error || "Fetched the page and found zero shows. Treated as a broken adapter."}`);
+    }
   }
+
+  writeHandoff({ report, silent, shows, added, updated, dropped, review: review.length });
   console.log("");
+}
+
+/* Hand the run's outcome to the workflow: the pull-request title and body, and
+   a marker file the final step checks so it can go red *after* the PR exists.
+   Written to RUNNER_TEMP so none of it is ever committed to the repo. */
+function writeHandoff({ report, silent, shows, added, updated, dropped, review }) {
+  const tmp = process.env.RUNNER_TEMP;
+  if (!tmp || DRY) return;
+
+  const ok = report.filter(r => !r.skipped && r.count > 0);
+  const lines = [];
+
+  if (silent.length) {
+    lines.push(`> [!WARNING]`);
+    lines.push(`> **${silent.length} source${silent.length === 1 ? "" : "s"} returned no listings.** These venues all run regular`);
+    lines.push(`> programmes, so zero rows means a broken adapter or a changed site, not a quiet month.`);
+    lines.push(`> The listings below are still worth merging — they are just missing these venues.`);
+    lines.push(">");   // stays inside the alert block; a bare blank line ends it
+    for (const r of silent) lines.push(`> - **${r.name}** — ${r.error || "fetched the page, found zero shows"}`);
+    lines.push("");
+  }
+
+  lines.push("Automatic listings collection.", "");
+  lines.push(`**${shows.length} shows** · ${added} new · ${updated} refreshed · ${dropped} past show${dropped === 1 ? "" : "s"} archived · ${review} awaiting review`, "");
+  lines.push("| Source | Shows |", "|---|---|");
+  for (const r of ok) lines.push(`| ${r.name} | ${r.count} |`);
+  for (const r of silent) lines.push(`| ${r.name} | **0 — broken** |`);
+  lines.push("");
+  lines.push("Review before merging. Anything the collector wasn't confident about is marked");
+  lines.push('`"status": "needs_review"` in `data/shows.json` and shows a warning banner on its');
+  lines.push("page until you clear it. Check especially:", "");
+  lines.push("- new shows with a `needs_review` status");
+  lines.push("- prices or times that changed");
+  lines.push("- anything from a third-party source rather than the venue's own site");
+
+  writeFileSync(join(tmp, "pr-body.md"), lines.join("\n") + "\n");
+  writeFileSync(join(tmp, "pr-title.txt"),
+    `${silent.length ? "⚠ " : ""}Listings update — ${shows.length} shows${silent.length ? `, ${silent.length} source${silent.length === 1 ? "" : "s"} broken` : ""}\n`);
+  if (silent.length) {
+    writeFileSync(join(tmp, "collector-silent"), silent.map(r => `${r.name}: ${r.error || "zero shows"}`).join("\n") + "\n");
+  }
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
