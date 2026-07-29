@@ -24,6 +24,16 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = join(ROOT, "dist");
 const SITE = process.env.SITE_URL || "https://www.irishcomedyguide.ie";
 
+/* Search-engine visibility.
+   Indexing is OFF unless ALLOW_INDEX=1 is set in the environment. While the
+   site is in development we do not want half-built pages, a temporary
+   kinsta.page hostname, or listings still being tuned turning up in Google —
+   and a stray index is far harder to undo than to prevent.
+   To go public: set ALLOW_INDEX=1 in Sevalla and redeploy. The build prints
+   which mode it ran in, so this cannot quietly stay off at launch. */
+const ALLOW_INDEX = process.env.ALLOW_INDEX === "1" || process.env.ALLOW_INDEX === "true";
+const robotsMeta = ALLOW_INDEX ? "" : '<meta name="robots" content="noindex, nofollow">\n  ';
+
 const read = p => readFileSync(join(ROOT, p), "utf8");
 const readJson = p => JSON.parse(read(p));
 const write = (rel, body) => {
@@ -78,7 +88,7 @@ function page({ title, description, canonical, body, jsonld, ogType = "website" 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
-<link rel="canonical" href="${SITE}${canonical}">
+${robotsMeta}<link rel="canonical" href="${SITE}${canonical}">
 <meta property="og:site_name" content="Irish Comedy Guide">
 <meta property="og:type" content="${ogType}">
 <meta property="og:title" content="${esc(title)}">
@@ -350,10 +360,13 @@ function build() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `<url><loc>${SITE}${u}</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`).join("\n")}
 </urlset>`);
-  write("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`);
+  write("robots.txt", ALLOW_INDEX
+  ? `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`
+  : `User-agent: *\nDisallow: /\n`);
 
   const review = upcoming.filter(s => s.status === "needs_review");
   console.log(`\n  Irish Comedy Guide — build complete`);
+  console.log(ALLOW_INDEX ? "  Search engines: ALLOWED (ALLOW_INDEX is set)" : "  Search engines: BLOCKED — noindex meta + robots.txt Disallow. Set ALLOW_INDEX=1 to publish.");
   console.log(`  ${urls.length} pages · ${published.length} published shows · ${review.length} awaiting review`);
   console.log(`  ${venues.length} venues · ${comedians.length} comedians`);
   if (review.length) {
