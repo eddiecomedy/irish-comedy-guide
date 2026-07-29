@@ -53,16 +53,42 @@ const DRY = args.includes("--dry-run");
 const FIXTURES = args.includes("--fixtures");
 const ONLY = args.includes("--only") ? args[args.indexOf("--only") + 1] : null;
 const TODAY = new Date().toISOString().slice(0, 10);
-const UA = "IrishComedyGuideBot/1.0 (+https://www.irishcomedyguide.ie/about; listings aggregator; contact hello@irishcomedyguide.ie)";
+/* We identify ourselves — a venue that objects should be able to find us rather
+   than just block us. But the bare "IrishComedyGuideBot/1.0 (…)" form was being
+   served different content by Squarespace-hosted sites: Dolan's and The Empire
+   both returned pages with none of their event links in them, silently, while
+   the same URLs fetched from a normal browser were full of them.
+
+   So: the conventional `Mozilla/5.0 (compatible; Bot/version; +url)` form. It
+   is no less honest — name, homepage and contact address are all still in
+   there — it just isn't rejected by naive user-agent filters. */
+const UA = "Mozilla/5.0 (compatible; IrishComedyGuideBot/1.0; +https://www.irishcomedyguide.ie/about; listings aggregator; contact hello@irishcomedyguide.ie)";
 
 /* ------------------------------------------------------------------ utils */
 const clean = s => String(s || "").replace(/\s+/g, " ").replace(/&amp;/g, "&")
   .replace(/&#8217;|&rsquo;/g, "’").replace(/&nbsp;/g, " ").trim();
 
 async function getHtml(url) {
-  const res = await fetch(url, { headers: { "user-agent": UA, accept: "text/html" }, redirect: "follow" });
+  const res = await fetch(url, {
+    headers: {
+      "user-agent": UA,
+      accept: "text/html,application/xhtml+xml",
+      "accept-language": "en-IE,en;q=0.9"
+    },
+    redirect: "follow"
+  });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
   return res.text();
+}
+
+/* When a listing page yields no event links, "found zero shows" is true but
+   useless. Say what actually came back, so the next person can tell a blocked
+   fetch from a redesigned page without re-running anything. */
+function reportEmptyListing(name, html, marker) {
+  const bytes = html ? html.length : 0;
+  const seen = html && marker ? html.includes(marker) : false;
+  console.warn(`   ! ${name}: listing page produced no event links — ${bytes} bytes fetched, ` +
+    `marker ${JSON.stringify(marker)} ${seen ? "present (page changed?)" : "absent (blocked or wrong page?)"}`);
 }
 
 /** Pull every application/ld+json blob out of a page and flatten @graph. */
@@ -230,6 +256,7 @@ const ADAPTERS = {
         [...html.matchAll(/\/gigs-events-live-music-listings\/\d{4}\/\d{1,2}\/\d{1,2}\/[a-z0-9-]+/gi)]
           .map(m => m[0])
       )];
+      if (!paths.length) reportEmptyListing("dolans", html, "gigs-events-live-music-listings");
       const shows = [];
       for (const path of paths.slice(0, 40)) {
         const link = `https://www.dolans.ie${path}`;
@@ -294,6 +321,7 @@ const ADAPTERS = {
     needs: "browser",
     async parseAsync(html, url, fetchPage) {
       const links = [...new Set([...html.matchAll(/https:\/\/www\.thebelfastempire\.com\/music-hall\/[a-z0-9-]*laughs-back[a-z0-9-]*\//gi)].map(m => m[0]))];
+      if (!links.length) reportEmptyListing("empire", html, "laughs-back");
       const shows = [];
       const thisYear = Number(TODAY.slice(0, 4));
       for (const link of links.slice(0, 30)) {
