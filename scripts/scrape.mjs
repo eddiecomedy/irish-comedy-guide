@@ -116,6 +116,22 @@ const NOT_A_PERSON = [
 ];
 const isPerson = name => name && name.length > 1 && !NOT_A_PERSON.some(re => re.test(name.trim()));
 
+/* Some venues print a date with no year — The Empire renders "Tue 4 Aug". The
+   weekday is the disambiguator: 4 Aug is a Tuesday in 2026 but a Monday in 2025
+   and a Wednesday in 2027, so the printed day name identifies the year on its
+   own. Returns null when nothing matches rather than assuming "this year",
+   because a wrong year is a punter at a locked door twelve months early. */
+const DAYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+function resolveYearByWeekday(day, month, weekday, fromYear) {
+  const want = DAYS.indexOf(String(weekday).toLowerCase().slice(0, 3));
+  if (want < 0) return null;
+  for (const y of [fromYear, fromYear + 1]) {
+    const d = new Date(Date.UTC(y, month - 1, day));
+    if (d.getUTCMonth() === month - 1 && d.getUTCDate() === day && d.getUTCDay() === want) return y;
+  }
+  return null;
+}
+
 const ADAPTERS = {
   /* Craic Den. The domain matters: craicdencomedy.ie does NOT resolve
      (NXDOMAIN) — the live site is craicdencomedyclub.com. /all-events/ renders
@@ -193,32 +209,48 @@ const ADAPTERS = {
     }
   },
 
-  /* Dolan's publishes clean server-rendered HTML — the best-behaved of the twelve.
-     Titles, dates and Yapsody links are all in the markup. Times and prices are
-     not, so every row lands with timeConfirmed:false. */
+  /* Dolan's, Limerick.
+
+     The old adapter here returned zero and nobody noticed until the silence
+     guard existed. The reason: /comedy is a Squarespace page of image blocks.
+     Every event link wraps a picture, so there is no anchor text to read — the
+     regex only ever matched the "BOOK TICKETS HERE" buttons, which carry
+     neither a title nor a date.
+
+     The event pages, however, publish a clean JSON-LD Event including a real
+     start time, which the old adapter never had (it wrote timeConfirmed:false
+     on everything). So: harvest the dated event paths off the listing page,
+     then read each event page properly. */
   dolans: {
     venue: "dolans",
     url: "https://www.dolans.ie/comedy",
     needs: "fetch",
-    parse(html, url) {
+    async parseAsync(html, url, fetchPage) {
+      const paths = [...new Set(
+        [...html.matchAll(/\/gigs-events-live-music-listings\/\d{4}\/\d{1,2}\/\d{1,2}\/[a-z0-9-]+/gi)]
+          .map(m => m[0])
+      )];
       const shows = [];
-      const re = /<a[^>]+href="(https?:\/\/[^"]*yapsody[^"]*|https?:\/\/www\.dolans\.ie\/gigs-events[^"]*)"[^>]*>([\s\S]{0,400}?)<\/a>/gi;
-      for (const m of html.matchAll(re)) {
-        const [, href, inner] = m;
-        const text = clean(inner.replace(/<[^>]+>/g, " "));
-        const d = text.match(/(\d{1,2})\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+(\d{4})/i)
-          || href.match(/\/(\d{4})\/(\d{1,2})\/(\d{1,2})/);
-        if (!d) continue;
-        const start = d.length === 4 && MONTHS[d[2]?.toLowerCase().slice(0, 3)]
-          ? `${d[3]}-${String(MONTHS[d[2].toLowerCase().slice(0, 3)]).padStart(2, "0")}-${String(d[1]).padStart(2, "0")}`
-          : `${d[1]}-${String(d[2]).padStart(2, "0")}-${String(d[3]).padStart(2, "0")}`;
-        const title = clean(text.replace(/\d{1,2}\s+\w+\s+\d{4}/i, "").replace(/^[\s·|-]+/, ""));
-        if (!title || title.length < 3) continue;
-        shows.push({
-          v: "dolans", t: title, type: "Tour show", start, price: null,
-          lineup: [title.split(":")[0].trim()].filter(isPerson), ticketUrl: href, sourceUrl: url,
-          verifiedAt: TODAY, status: "published", timeConfirmed: false, priceConfirmed: false
-        });
+      for (const path of paths.slice(0, 40)) {
+        const link = `https://www.dolans.ie${path}`;
+        try {
+          const ev = jsonLd(await fetchPage(link)).map(n => eventFromLd(n, "dolans", link)).find(Boolean);
+          if (!ev) continue;
+          shows.push({
+            ...ev,
+            // JSON-LD name repeats the venue: "Neil Delamere (comedy) — Dolan's …"
+            t: clean(ev.t.replace(/\s*[—–-]\s*Dolan'?s.*$/i, "")),
+            type: "Tour show",
+            currency: "EUR",
+            // Dolan's publishes no performer list. The act is the title, but
+            // deriving a person's name from it guesses wrong on show titles
+            // like "Sheer Luck Holmes", so we leave it empty rather than
+            // inventing comedian pages.
+            lineup: [],
+            ticketUrl: ev.ticketUrl || link,
+            priceConfirmed: false
+          });
+        } catch (e) { console.warn(`   ! ${link}: ${e.message}`); }
       }
       return shows;
     }
@@ -243,8 +275,19 @@ const ADAPTERS = {
     }
   },
 
-  /* The Empire's individual event pages are server-rendered and consistent.
-     The overview grid is a JS plugin, so collect event URLs with a browser. */
+  /* The Empire, Belfast.
+
+     The overview grid is a JS plugin, so event URLs need a browser. The links
+     were never the problem — the event pages were.
+
+     The old adapter looked for "4 August 2026" and hardcoded a 21:00 start.
+     The pages actually render "Tue 4 Aug" — abbreviated, and with no year at
+     all — and carry no JSON-LD whatsoever, so it matched nothing and silently
+     returned zero. The year comes from the weekday (see resolveYearByWeekday).
+
+     What the page does publish is a DOORS time, not a stage time. Printing
+     doors as the start would be a plain factual error, so the row carries the
+     date only, with doors in the notes, and goes to review. GBP throughout. */
   empire: {
     venue: "empire",
     url: "https://www.thebelfastempire.com/music-hall/",
@@ -252,20 +295,41 @@ const ADAPTERS = {
     async parseAsync(html, url, fetchPage) {
       const links = [...new Set([...html.matchAll(/https:\/\/www\.thebelfastempire\.com\/music-hall\/[a-z0-9-]*laughs-back[a-z0-9-]*\//gi)].map(m => m[0]))];
       const shows = [];
-      for (const link of links.slice(0, 20)) {
-        const page = await fetchPage(link);
+      const thisYear = Number(TODAY.slice(0, 4));
+      for (const link of links.slice(0, 30)) {
+        let page;
+        try { page = await fetchPage(link); }
+        catch (e) { console.warn(`   ! ${link}: ${e.message}`); continue; }
+
         const ld = jsonLd(page).map(n => eventFromLd(n, "empire", link)).find(Boolean);
         if (ld) { shows.push({ ...ld, currency: "GBP", lineup: (ld.lineup || []).filter(isPerson) }); continue; }
-        const d = page.match(/(\d{1,2})(?:st|nd|rd|th)?\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})/i);
+
+        const text = clean(page.replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " "));
+        const d = text.match(/\b(Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\s+(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\b/i);
         if (!d) continue;
-        const mth = String(Object.keys(MONTHS).indexOf(d[2].toLowerCase().slice(0, 3)) + 1).padStart(2, "0");
+        const month = MONTHS[d[3].toLowerCase().slice(0, 3)];
+        const day = Number(d[2]);
+        const year = resolveYearByWeekday(day, month, d[1], thisYear);
+        if (!year) continue;   // weekday and date disagree — don't guess
+
+        const title = clean((page.match(/<title[^>]*>([\s\S]{0,160}?)<\/title>/i) || [])[1] || "")
+          .replace(/\s*\|\s*The Belfast Empire.*$/i, "") || "The Empire Laughs Back";
+        const doors = text.match(/Doors\s+(\d{1,2})[.:](\d{2})\s*(am|pm)/i);
+        const price = text.match(/£\s?(\d+(?:\.\d{2})?)/);
+
         shows.push({
-          v: "empire", t: "The Empire Laughs Back", type: "Club night",
-          start: `${d[3]}-${mth}-${String(d[1]).padStart(2, "0")}T21:00`,
-          price: 12, currency: "GBP", lineup: [],
-          ticketUrl: "https://www.empirelaughsback.com/", sourceUrl: link,
-          verifiedAt: TODAY, status: "needs_review",
-          notes: "Auto-collected without structured data — line-up not confirmed."
+          v: "empire",
+          t: title,
+          type: "Club night",
+          start: `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`,
+          price: price ? Number(price[1]) : null,
+          currency: "GBP",
+          lineup: [],
+          ticketUrl: link,
+          sourceUrl: link,
+          verifiedAt: TODAY,
+          status: "needs_review",
+          notes: `Venue publishes doors${doors ? ` (${doors[1]}.${doors[2]}${doors[3].toLowerCase()})` : ""}, not stage time; year inferred from the printed weekday. Line-up not published.`
         });
       }
       return shows;
