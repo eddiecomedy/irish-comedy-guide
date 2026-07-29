@@ -366,7 +366,7 @@ ${urls.map(u => `<url><loc>${SITE}${u}</loc><lastmod>${new Date().toISOString().
 
   const review = upcoming.filter(s => s.status === "needs_review");
   console.log(`\n  Irish Comedy Guide — build complete`);
-  console.log(ALLOW_INDEX ? "  Search engines: ALLOWED (ALLOW_INDEX is set)" : "  Search engines: BLOCKED — noindex meta + robots.txt Disallow. Set ALLOW_INDEX=1 to publish.");
+  console.log(ALLOW_INDEX ? "  Search engines: ALLOWED" : "  Search engines: BLOCKED — noindex meta + robots.txt Disallow. Set ALLOW_INDEX=1 to publish.");
   console.log(`  ${urls.length} pages · ${published.length} published shows · ${review.length} awaiting review`);
   console.log(`  ${venues.length} venues · ${comedians.length} comedians`);
   if (review.length) {
