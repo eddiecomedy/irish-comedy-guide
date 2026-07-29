@@ -429,7 +429,15 @@ async function makeBrowser() {
 
 /* ------------------------------------------------------------------ merge */
 function merge(existing, incoming) {
-  const key = s => `${s.v}|${s.start.slice(0, 10)}|${(s.t || "").toLowerCase().replace(/[^a-z0-9]/g, "").slice(0, 20)}`;
+  /* The key MUST include the start time, not just the date.
+     It used to be date-only, and that silently ate every double-header: Craic
+     Den runs 7.30pm and 9.30pm shows on Fridays and Saturdays under the same
+     title, and the two collapsed into one row. The collector fetched 171 Craic
+     Den shows and only 137 reached the file — 34 real, ticketed, on-sale shows
+     vanished between collection and disk, with nothing reporting it.
+     A duplicate row is visible in the pull request and costs a human ten
+     seconds. A dropped row is invisible and costs a punter their evening. */
+  const key = s => `${s.v}|${s.start}|${(s.t || "").toLowerCase().replace(/[^a-z0-9]/g, "").slice(0, 20)}`;
   const byKey = new Map(existing.map(s => [key(s), s]));
   let added = 0, updated = 0;
   for (const s of incoming) {
