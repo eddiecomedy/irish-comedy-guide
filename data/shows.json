@@ -1,1276 +1,5 @@
 [
   {
-    "v": "roisin",
-    "t": "Tuesday Comedy Showcase",
-    "type": "Club night",
-    "start": "2026-07-28T20:30",
-    "price": null,
-    "lineup": [
-      "Rob Nother"
-    ],
-    "sourceUrl": "https://roisindubh.net/",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "priceConfirmed": false,
-    "desc": "The west's weekly comedy showcase, mixing established and emerging acts."
-  },
-  {
-    "v": "empire",
-    "t": "The Empire Laughs Back",
-    "type": "Club night",
-    "start": "2026-07-28T21:00",
-    "price": 12,
-    "currency": "GBP",
-    "lineup": [
-      "Andrew Ryan (MC)",
-      "Limahl Germain",
-      "Ger Staunton"
-    ],
-    "ticketUrl": "https://www.empirelaughsback.com/",
-    "sourceUrl": "https://www.thebelfastempire.com/music-hall/",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "desc": "Belfast's longest-running comedy club. Doors 7.30pm, show at 9pm, free pint of Harp for the first fifty through the door, live music afterclub to follow. £10 for students."
-  },
-  {
-    "v": "icc",
-    "t": "The Comedy Cellar",
-    "type": "Club night",
-    "start": "2026-07-29T19:30",
-    "price": 13,
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/comedy-cellar-at-the-international-tickets-1862859205029",
-    "sourceUrl": "https://intercomedydublin.com/eventbrite-event/comedy-cellar-at-the-international/",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "desc": "Wednesday night in the room above the International Bar — where half of Irish comedy learned its trade."
-  },
-  {
-    "v": "craicden",
-    "t": "Wednesday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-07-29T20:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Andrew Dorman",
-      "Gar Murran",
-      "Justine Megan",
-      "Damo Clark"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Stand-Up Comedy Club: Low-Key Funny",
-    "type": "Club night",
-    "start": "2026-07-29T20:30",
-    "price": null,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-low-key-funny-tickets-1990995709764",
-    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-low-key-funny-tickets-1990995709764",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "dolans",
-    "t": "Alok: Eat Pray Leave!",
-    "type": "Tour show",
-    "start": "2026-07-30",
-    "price": null,
-    "lineup": [
-      "Alok",
-      "Allie O'Rourke"
-    ],
-    "ticketUrl": "https://dolans.yapsody.com/event/index/869371/alok",
-    "sourceUrl": "https://www.dolans.ie/comedy",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "timeConfirmed": false,
-    "priceConfirmed": false
-  },
-  {
-    "v": "dolans",
-    "t": "ALOK: Eat Pray Leave! + special guest Allie O'Rourke (comedy)",
-    "type": "Tour show",
-    "start": "2026-07-30T19:30",
-    "price": null,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/7/30/alok-comedy",
-    "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/7/30/alok-comedy",
-    "verifiedAt": "2026-07-29",
-    "status": "published",
-    "priceConfirmed": false
-  },
-  {
-    "v": "craicden",
-    "t": "Thursday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-07-30T20:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "David O'Doherty",
-      "Gar Murran",
-      "Breda Hegarty",
-      "Brian Gallagher"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Stand-Up Comedy Club: Thursday Showcase",
-    "type": "Club night",
-    "start": "2026-07-30T20:30",
-    "price": null,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990995750887",
-    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990995750887",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Aideen McQueen Work In Progress",
-    "type": "Club night",
-    "start": "2026-07-31T18:30",
-    "price": 5,
-    "currency": "EUR",
-    "lineup": [
-      "Aideen McQueen"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Friday Show",
-    "type": "Club night",
-    "start": "2026-07-31T20:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "Brian Gallagher",
-      "David O'Doherty",
-      "Breda Hegarty",
-      "Eddie Mullarkey"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "citylimits",
-    "t": "The Best of Cork Summer Series",
-    "type": "Club night",
-    "start": "2026-07-31T20:45",
-    "price": 20,
-    "lineup": [
-      "Paul Crowley",
-      "Michael 'The B' Roche"
-    ],
-    "sourceUrl": "https://entertainment.ie/events/event/show-cork/city-limits-comedy-club/the-best-of-cork-summer-series/comedy-43036/",
-    "verifiedAt": "2026-07-28",
-    "status": "needs_review",
-    "notes": "Time given as 20:45 on entertainment.ie and 20:30 on purecork.ie. Third-party sourced — confirm with the venue.",
-    "desc": "Resident comedians Paul Crowley and Michael 'The B' Roche with some of Cork's best."
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Saturday Show",
-    "type": "Club night",
-    "start": "2026-08-01T19:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "David O'Doherty",
-      "Brian Gallagher",
-      "Breda Hegarty",
-      "Eddie Mullarkey"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "citylimits",
-    "t": "The Best of Cork Summer Series",
-    "type": "Club night",
-    "start": "2026-08-01T20:45",
-    "price": 20,
-    "lineup": [
-      "Paul Crowley",
-      "Michael 'The B' Roche"
-    ],
-    "sourceUrl": "https://entertainment.ie/events/event/show-cork/city-limits-comedy-club/the-best-of-cork-summer-series/comedy-43036/",
-    "verifiedAt": "2026-07-28",
-    "status": "needs_review",
-    "notes": "Third-party sourced — confirm with the venue."
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Saturday Show",
-    "type": "Club night",
-    "start": "2026-08-01T21:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "David O'Doherty",
-      "Brian Gallagher",
-      "Breda Hegarty",
-      "Eddie Mullarkey"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "dolans",
-    "t": "Neil Delamere",
-    "type": "Tour show",
-    "start": "2026-08-02",
-    "price": null,
-    "lineup": [
-      "Neil Delamere"
-    ],
-    "ticketUrl": "https://dolans.yapsody.com/event/index/864817/neil-delamere",
-    "sourceUrl": "https://www.dolans.ie/comedy",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "timeConfirmed": false,
-    "priceConfirmed": false
-  },
-  {
-    "v": "craicden",
-    "t": "CRAIC DEN SHOWCASE SHOW at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-02T16:30",
-    "price": 8,
-    "currency": "EUR",
-    "lineup": [
-      "Eddie Mullarkey"
-    ],
-    "venueNote": "Bison Bar Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Sunday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-02T19:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Gar Murran",
-      "David O'Doherty",
-      "Breda Hegarty",
-      "Brian Gallagher"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "dolans",
-    "t": "Neil Delamere (comedy)",
-    "type": "Tour show",
-    "start": "2026-08-02T19:30",
-    "price": null,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/8/2/neil-delamere-comedy",
-    "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/8/2/neil-delamere-comedy",
-    "verifiedAt": "2026-07-29",
-    "status": "published",
-    "priceConfirmed": false
-  },
-  {
-    "v": "craicden",
-    "t": "Sunday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-02T21:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Gar Murran",
-      "David O'Doherty",
-      "Breda Hegarty",
-      "Brian Gallagher"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Monday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-03T20:30",
-    "price": 8,
-    "currency": "EUR",
-    "lineup": [],
-    "venueNote": "Workmans Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "empire",
-    "t": "THE EMPIRE FLEADHS BACK COMEDY CLUB",
-    "type": "Club night",
-    "start": "2026-08-04",
-    "price": 12,
-    "currency": "GBP",
-    "lineup": [],
-    "ticketUrl": "https://www.thebelfastempire.com/music-hall/empire-laughs-back-comedy-club-back-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-3-2-2-2-2-2-2/",
-    "sourceUrl": "https://www.thebelfastempire.com/music-hall/empire-laughs-back-comedy-club-back-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-3-2-2-2-2-2-2/",
-    "verifiedAt": "2026-07-29",
-    "status": "needs_review",
-    "notes": "Venue publishes doors (7.30pm), not stage time; year inferred from the printed weekday. Line-up not published."
-  },
-  {
-    "v": "craicden",
-    "t": "Tuesday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-04T20:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Donna Fletcher",
-      "Duane Doogan",
-      "Eddie Mullarkey"
-    ],
-    "venueNote": "Workmans Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "empire",
-    "t": "The Empire Fleadhs Back",
-    "type": "Club night",
-    "start": "2026-08-04T21:00",
-    "price": 12,
-    "currency": "GBP",
-    "lineup": [
-      "Paddy McDonnell (MC)",
-      "Ian Thomson",
-      "Teresa Livingstone"
-    ],
-    "ticketUrl": "https://www.empirelaughsback.com/",
-    "sourceUrl": "https://www.thebelfastempire.com/music-hall/",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "desc": "The Empire Laughs Back under Fleadh Belfast 2026 branding. Doors 7.30pm, show at 9pm."
-  },
-  {
-    "v": "craicden",
-    "t": "Wednesday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-05T20:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "David Rose",
-      "Duane Doogan",
-      "Eddie Mullarkey"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Stand-Up Comedy Club: Low-Key Funny",
-    "type": "Club night",
-    "start": "2026-08-05T20:30",
-    "price": null,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-low-key-funny-tickets-1990996726806",
-    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-low-key-funny-tickets-1990996726806",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Thursday Comedy Showcase",
-    "type": "Club night",
-    "start": "2026-08-06T20:30",
-    "price": null,
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996756896",
-    "sourceUrl": "https://www.eventbrite.com/cc/thursday-comedy-showcase-at-the-coco-comedy-club-1224229",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "priceConfirmed": false
-  },
-  {
-    "v": "craicden",
-    "t": "Thursday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-06T20:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "David Rose",
-      "Anne Gildea",
-      "Karl Spain",
-      "Eddie Mullarkey"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Stand-Up Comedy Club: Thursday Showcase",
-    "type": "Club night",
-    "start": "2026-08-06T20:30",
-    "price": null,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996756896",
-    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996756896",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Friday Show",
-    "type": "Club night",
-    "start": "2026-08-07T19:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "Karl Spain",
-      "Anne Gildea",
-      "Eddie Mullarkey"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Friday Show",
-    "type": "Club night",
-    "start": "2026-08-07T21:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "Karl Spain",
-      "Anne Gildea",
-      "Eddie Mullarkey"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Stand-Up Comedy Club: The Earlier Show",
-    "type": "Club night",
-    "start": "2026-08-08T18:30",
-    "price": 10,
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-the-earlier-show-tickets-1990996832121",
-    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-the-earlier-show-tickets-1990996832121",
-    "verifiedAt": "2026-07-29",
-    "status": "published",
-    "desc": "Saturday's early show, 6.30pm to 8pm. The club is keeping the line-up a secret."
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Saturday Show",
-    "type": "Club night",
-    "start": "2026-08-08T19:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "Karl Spain",
-      "Anne Gildea"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Stand-Up Comedy Club: Cork's Best Stand-Up",
-    "type": "Club night",
-    "start": "2026-08-08T20:30",
-    "price": null,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-corks-best-stand-up-tickets-1990996856193",
-    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-corks-best-stand-up-tickets-1990996856193",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Saturday Show",
-    "type": "Club night",
-    "start": "2026-08-08T21:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "Karl Spain",
-      "Anne Gildea"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Sunday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-09T20:00",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Anne Gildea",
-      "Karl Spain"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Monday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-10T20:30",
-    "price": 8,
-    "currency": "EUR",
-    "lineup": [],
-    "venueNote": "Workmans Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "empire",
-    "t": "THE EMPIRE LAUGHS BACK COMEDY CLUB",
-    "type": "Club night",
-    "start": "2026-08-11",
-    "price": 12,
-    "currency": "GBP",
-    "lineup": [],
-    "ticketUrl": "https://www.thebelfastempire.com/music-hall/empire-laughs-back-comedy-club-back-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-3-2-2-2-2-2-2-2/",
-    "sourceUrl": "https://www.thebelfastempire.com/music-hall/empire-laughs-back-comedy-club-back-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-3-2-2-2-2-2-2-2/",
-    "verifiedAt": "2026-07-29",
-    "status": "needs_review",
-    "notes": "Venue publishes doors (7.30pm), not stage time; year inferred from the printed weekday. Line-up not published."
-  },
-  {
-    "v": "craicden",
-    "t": "Tuesday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-11T20:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Patser Murray",
-      "Pat McDonnell",
-      "David McSavage"
-    ],
-    "venueNote": "Workmans Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "empire",
-    "t": "The Empire Laughs Back",
-    "type": "Club night",
-    "start": "2026-08-11T21:00",
-    "price": 12,
-    "currency": "GBP",
-    "lineup": [],
-    "ticketUrl": "https://www.empirelaughsback.com/",
-    "sourceUrl": "https://www.thebelfastempire.com/music-hall/",
-    "verifiedAt": "2026-07-28",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Wednesday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-12T20:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Patser Murray",
-      "Pat McDonnell",
-      "David McSavage"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Stand-Up Comedy Club: Low-Key Funny",
-    "type": "Club night",
-    "start": "2026-08-12T20:30",
-    "price": null,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-low-key-funny-tickets-1990996732824",
-    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-low-key-funny-tickets-1990996732824",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Thursday Comedy Showcase",
-    "type": "Club night",
-    "start": "2026-08-13T20:30",
-    "price": null,
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996765923",
-    "sourceUrl": "https://www.eventbrite.com/cc/thursday-comedy-showcase-at-the-coco-comedy-club-1224229",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "priceConfirmed": false
-  },
-  {
-    "v": "craicden",
-    "t": "Thursday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-13T20:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Patser Murray",
-      "Pat McDonnell",
-      "David McSavage"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Stand-Up Comedy Club: Thursday Showcase",
-    "type": "Club night",
-    "start": "2026-08-13T20:30",
-    "price": null,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996765923",
-    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996765923",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Friday Show",
-    "type": "Club night",
-    "start": "2026-08-14T19:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "Patser Murray",
-      "Pat McDonnell",
-      "David McSavage"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Friday Show",
-    "type": "Club night",
-    "start": "2026-08-14T21:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "Patser Murray",
-      "Pat McDonnell",
-      "David McSavage"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Stand-Up Comedy Club: The Earlier Show",
-    "type": "Club night",
-    "start": "2026-08-15T18:30",
-    "price": null,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-the-earlier-show-tickets-1990996839142",
-    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-the-earlier-show-tickets-1990996839142",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Saturday Show",
-    "type": "Club night",
-    "start": "2026-08-15T19:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "Patser Murray",
-      "Pat McDonnell",
-      "David McSavage"
-    ],
-    "venueNote": "Workmans Club Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Stand-Up Comedy Club: Cork's Best Stand-Up",
-    "type": "Club night",
-    "start": "2026-08-15T20:30",
-    "price": null,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-corks-best-stand-up-tickets-1990996861208",
-    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-corks-best-stand-up-tickets-1990996861208",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Saturday Show",
-    "type": "Club night",
-    "start": "2026-08-15T21:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "Patser Murray",
-      "Pat McDonnell",
-      "David McSavage"
-    ],
-    "venueNote": "Workmans Club Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "laverys",
-    "t": "Dan Nightingale & Friends",
-    "type": "Tour show",
-    "start": "2026-08-16",
-    "price": 16,
-    "currency": "GBP",
-    "lineup": [
-      "Dan Nightingale"
-    ],
-    "ticketUrl": "https://laverys.com/laverys-comedy-club/",
-    "sourceUrl": "https://laverys.com/laverys-comedy-club/",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "timeConfirmed": false
-  },
-  {
-    "v": "craicden",
-    "t": "Sunday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-16T20:00",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Patser Murray",
-      "Pat McDonnell",
-      "David McSavage"
-    ],
-    "venueNote": "Workmans Club Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Monday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-17T20:30",
-    "price": 8,
-    "currency": "EUR",
-    "lineup": [],
-    "venueNote": "Workmans Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "empire",
-    "t": "THE EMPIRE LAUGHS BACK COMEDY CLUB",
-    "type": "Club night",
-    "start": "2026-08-18",
-    "price": 12,
-    "currency": "GBP",
-    "lineup": [],
-    "ticketUrl": "https://www.thebelfastempire.com/music-hall/empire-laughs-back-comedy-club-back-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-3-2-2-2-2-2-2-2-2/",
-    "sourceUrl": "https://www.thebelfastempire.com/music-hall/empire-laughs-back-comedy-club-back-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-3-2-2-2-2-2-2-2-2/",
-    "verifiedAt": "2026-07-29",
-    "status": "needs_review",
-    "notes": "Venue publishes doors (7.30pm), not stage time; year inferred from the printed weekday. Line-up not published."
-  },
-  {
-    "v": "craicden",
-    "t": "Tuesday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-18T20:30",
-    "price": 10,
-    "currency": "EUR",
-    "lineup": [
-      "Kevin Larney",
-      "Aaron Chandler",
-      "Danny Ryan"
-    ],
-    "venueNote": "Workmans Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "empire",
-    "t": "The Empire Laughs Back",
-    "type": "Club night",
-    "start": "2026-08-18T21:00",
-    "price": 12,
-    "currency": "GBP",
-    "lineup": [],
-    "ticketUrl": "https://www.empirelaughsback.com/",
-    "sourceUrl": "https://www.thebelfastempire.com/music-hall/",
-    "verifiedAt": "2026-07-28",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Wednesday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-19T20:30",
-    "price": 10,
-    "currency": "EUR",
-    "lineup": [
-      "Kevin Larney",
-      "Aaron Chandler",
-      "Danny Ryan"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Thursday Comedy Showcase",
-    "type": "Club night",
-    "start": "2026-08-20T20:30",
-    "price": null,
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996772944",
-    "sourceUrl": "https://www.eventbrite.com/cc/thursday-comedy-showcase-at-the-coco-comedy-club-1224229",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "priceConfirmed": false
-  },
-  {
-    "v": "craicden",
-    "t": "Thursday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-20T20:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Aaron Butler",
-      "Lou Ridgeway",
-      "Danny Ryan"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Friday Show",
-    "type": "Club night",
-    "start": "2026-08-21T19:30",
-    "price": 12.5,
-    "currency": "EUR",
-    "lineup": [
-      "Aaron Butler",
-      "Lou Ridgeway",
-      "Danny Ryan"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Friday Show",
-    "type": "Club night",
-    "start": "2026-08-21T21:30",
-    "price": 12.5,
-    "currency": "EUR",
-    "lineup": [
-      "Aaron Butler",
-      "Lou Ridgeway",
-      "Danny Ryan"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "cherry",
-    "t": "Cherry Comedy at Little Whelan's",
-    "type": "Club night",
-    "start": "2026-08-22T19:00",
-    "price": null,
-    "lineup": [],
-    "ticketUrl": "https://cherrycomedy.ie/show/august-22nd-2026/",
-    "sourceUrl": "https://cherrycomedy.ie/show/august-22nd-2026/",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "priceConfirmed": false,
-    "desc": "Early show doors 6.30pm for a 7pm start; late show doors 8.45pm for 9pm. Line-up to be announced."
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Saturday Show",
-    "type": "Club night",
-    "start": "2026-08-22T19:30",
-    "price": 12.5,
-    "currency": "EUR",
-    "lineup": [
-      "Aaron Butler",
-      "Lou Ridgeway",
-      "Danny Ryan"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Saturday Show",
-    "type": "Club night",
-    "start": "2026-08-22T21:30",
-    "price": 12.5,
-    "currency": "EUR",
-    "lineup": [
-      "Aaron Butler",
-      "Lou Ridgeway",
-      "Danny Ryan"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Sunday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-23T20:00",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Aaron Butler",
-      "Lou Ridgeway",
-      "Danny Ryan"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Monday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-24T20:30",
-    "price": 8,
-    "currency": "EUR",
-    "lineup": [],
-    "venueNote": "Workmans Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "empire",
-    "t": "THE EMPIRE LAUGHS BACK COMEDY CLUB",
-    "type": "Club night",
-    "start": "2026-08-25",
-    "price": 12,
-    "currency": "GBP",
-    "lineup": [],
-    "ticketUrl": "https://www.thebelfastempire.com/music-hall/empire-laughs-back-comedy-club-back-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-3-2-2-2-2-2-2-2-2-2/",
-    "sourceUrl": "https://www.thebelfastempire.com/music-hall/empire-laughs-back-comedy-club-back-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-3-2-2-2-2-2-2-2-2-2/",
-    "verifiedAt": "2026-07-29",
-    "status": "needs_review",
-    "notes": "Venue publishes doors (7.30pm), not stage time; year inferred from the printed weekday. Line-up not published."
-  },
-  {
-    "v": "craicden",
-    "t": "Tuesday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-25T20:30",
-    "price": 10,
-    "currency": "EUR",
-    "lineup": [],
-    "venueNote": "Workmans Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "empire",
-    "t": "The Empire Laughs Back",
-    "type": "Club night",
-    "start": "2026-08-25T21:00",
-    "price": 12,
-    "currency": "GBP",
-    "lineup": [],
-    "ticketUrl": "https://www.empirelaughsback.com/",
-    "sourceUrl": "https://www.thebelfastempire.com/music-hall/",
-    "verifiedAt": "2026-07-28",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Wednesday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-26T20:30",
-    "price": 10,
-    "currency": "EUR",
-    "lineup": [],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "coco",
-    "t": "Thursday Comedy Showcase",
-    "type": "Club night",
-    "start": "2026-08-27T20:30",
-    "price": null,
-    "lineup": [],
-    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996779965",
-    "sourceUrl": "https://www.eventbrite.com/cc/thursday-comedy-showcase-at-the-coco-comedy-club-1224229",
-    "verifiedAt": "2026-07-28",
-    "status": "published",
-    "priceConfirmed": false
-  },
-  {
-    "v": "craicden",
-    "t": "Thursday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-27T20:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Adam Fields"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Friday Show",
-    "type": "Club night",
-    "start": "2026-08-28T19:30",
-    "price": 12.5,
-    "currency": "EUR",
-    "lineup": [
-      "Adam Fields"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Friday Show",
-    "type": "Club night",
-    "start": "2026-08-28T21:30",
-    "price": 14,
-    "currency": "EUR",
-    "lineup": [
-      "Adam Fields"
-    ],
-    "venueNote": "Workman Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Saturday Show",
-    "type": "Club night",
-    "start": "2026-08-29T19:30",
-    "price": 12.5,
-    "currency": "EUR",
-    "lineup": [
-      "Adam Fields"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "The Big Saturday Show",
-    "type": "Club night",
-    "start": "2026-08-29T21:30",
-    "price": 12.5,
-    "currency": "EUR",
-    "lineup": [
-      "Adam Fields"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Sunday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-30T19:30",
-    "price": 10.5,
-    "currency": "EUR",
-    "lineup": [
-      "Adam Fields"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Monday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-08-31T20:30",
-    "price": 8,
-    "currency": "EUR",
-    "lineup": [],
-    "venueNote": "Workmans Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Tuesday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-09-01T20:30",
-    "price": 10,
-    "currency": "EUR",
-    "lineup": [
-      "Casey Gothard",
-      "Bob Henigan"
-    ],
-    "venueNote": "Workmans Dublin",
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
-    "v": "craicden",
-    "t": "Wednesday at Craic Den Comedy Club",
-    "type": "Club night",
-    "start": "2026-09-02T20:30",
-    "price": 10,
-    "currency": "EUR",
-    "lineup": [
-      "Casey Gothard",
-      "Bob Henigan"
-    ],
-    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
-    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
-    "status": "published"
-  },
-  {
     "v": "coco",
     "t": "Thursday Comedy Showcase",
     "type": "Club night",
@@ -1334,6 +63,19 @@
     "status": "published"
   },
   {
+    "v": "coco",
+    "t": "Stand-Up Comedy Club: The Earlier Show",
+    "type": "Club night",
+    "start": "2026-09-05T18:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-the-earlier-show-tickets-1990996636536",
+    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-the-earlier-show-tickets-1990996636536",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
     "v": "craicden",
     "t": "The Big Saturday Show",
     "type": "Club night",
@@ -1346,7 +88,20 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
+    "v": "coco",
+    "t": "Stand-Up Comedy Club: Cork's Best Stand-Up",
+    "type": "Club night",
+    "start": "2026-09-05T20:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-corks-best-stand-up-tickets-1990996663617",
+    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-corks-best-stand-up-tickets-1990996663617",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1362,7 +117,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1394,6 +149,20 @@
     "priceConfirmed": false
   },
   {
+    "v": "dolans",
+    "t": "Sheer Luck Holmes - SOLD OUT",
+    "type": "Tour show",
+    "start": "2026-09-06T19:00",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/9/6/sheer-luck-holmes",
+    "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/9/6/sheer-luck-holmes",
+    "verifiedAt": "2026-09-05",
+    "status": "published",
+    "priceConfirmed": false
+  },
+  {
     "v": "craicden",
     "t": "Sunday at Craic Den Comedy Club",
     "type": "Club night",
@@ -1407,7 +176,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1421,8 +190,22 @@
     "venueNote": "Workmans Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
+  },
+  {
+    "v": "empire",
+    "t": "THE EMPIRE LAUGHS BACK COMEDY CLUB",
+    "type": "Club night",
+    "start": "2026-09-08",
+    "price": 12,
+    "currency": "GBP",
+    "lineup": [],
+    "ticketUrl": "https://www.thebelfastempire.com/music-hall/empire-laughs-back-comedy-club-back-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-3-2-2-2-2-2/",
+    "sourceUrl": "https://www.thebelfastempire.com/music-hall/empire-laughs-back-comedy-club-back-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-3-2-2-2-2-2/",
+    "verifiedAt": "2026-09-05",
+    "status": "needs_review",
+    "notes": "Venue publishes doors (7.30pm), not stage time; year inferred from the printed weekday. Line-up not published."
   },
   {
     "v": "craicden",
@@ -1439,7 +222,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1456,7 +239,20 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
+    "v": "coco",
+    "t": "Stand-Up Comedy Club: Low-Key Funny",
+    "type": "Club night",
+    "start": "2026-09-09T20:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-low-key-funny-tickets-1990996567329",
+    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-low-key-funny-tickets-1990996567329",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1470,7 +266,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1504,6 +300,37 @@
     "status": "published"
   },
   {
+    "v": "coco",
+    "t": "Stand-Up Comedy Club: Thursday Showcase",
+    "type": "Club night",
+    "start": "2026-09-10T20:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996604440",
+    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996604440",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
+    "v": "craicden",
+    "t": "Thursday at Craic Den Comedy Club",
+    "type": "Club night",
+    "start": "2026-09-10T21:00",
+    "price": 10.5,
+    "currency": "EUR",
+    "lineup": [
+      "Jo Jarvie",
+      "Damo Clark",
+      "Shane Clifford",
+      "Brian Gallagher"
+    ],
+    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
+    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
     "v": "citylimits",
     "t": "Paul Crowley: That's Paul Folks",
     "type": "Tour show",
@@ -1533,7 +360,51 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
+    "v": "coco",
+    "t": "Stand-Up Comedy Club: Cork's Funniest Feens",
+    "type": "Club night",
+    "start": "2026-09-11T20:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-corks-funniest-feens-tickets-1999106847395",
+    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-corks-funniest-feens-tickets-1999106847395",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
+    "v": "craicden",
+    "t": "The Big Friday Show",
+    "type": "Club night",
+    "start": "2026-09-11T21:30",
+    "price": 14,
+    "currency": "EUR",
+    "lineup": [
+      "Damo Clark",
+      "Alexandra Haddow",
+      "Shane Clifford",
+      "Eddie Mullarkey"
+    ],
+    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
+    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
+    "v": "coco",
+    "t": "Stand-Up Comedy Club: The Earlier Show",
+    "type": "Club night",
+    "start": "2026-09-12T18:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-the-earlier-show-tickets-1990996644560",
+    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-the-earlier-show-tickets-1990996644560",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1550,7 +421,20 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
+    "v": "coco",
+    "t": "Stand-Up Comedy Club: Cork's Best Stand-Up",
+    "type": "Club night",
+    "start": "2026-09-12T20:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-corks-best-stand-up-tickets-1990996669635",
+    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-corks-best-stand-up-tickets-1990996669635",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1567,7 +451,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1597,7 +481,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/9/13/shane-todd-comedy-new-date-added",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/9/13/shane-todd-comedy-new-date-added",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -1615,7 +499,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1629,8 +513,22 @@
     "venueNote": "Workmans Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
+  },
+  {
+    "v": "empire",
+    "t": "THE EMPIRE LAUGHS BACK COMEDY CLUB",
+    "type": "Club night",
+    "start": "2026-09-15",
+    "price": 12,
+    "currency": "GBP",
+    "lineup": [],
+    "ticketUrl": "https://www.thebelfastempire.com/music-hall/the-empire-laughs-back-comedy-club/",
+    "sourceUrl": "https://www.thebelfastempire.com/music-hall/the-empire-laughs-back-comedy-club/",
+    "verifiedAt": "2026-09-05",
+    "status": "needs_review",
+    "notes": "Venue publishes doors (7.30pm), not stage time; year inferred from the printed weekday. Line-up not published."
   },
   {
     "v": "craicden",
@@ -1646,7 +544,7 @@
     "venueNote": "Workmans Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1663,7 +561,20 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
+    "v": "coco",
+    "t": "Stand-Up Comedy Club: Low-Key Funny",
+    "type": "Club night",
+    "start": "2026-09-16T20:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-low-key-funny-tickets-1990996573347",
+    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-low-key-funny-tickets-1990996573347",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1678,7 +589,7 @@
     ],
     "ticketUrl": "https://www.eventbrite.ie/e/deirdre-okane-work-in-progress-at-the-coco-comedy-club-tickets-1977028681005",
     "sourceUrl": "https://www.eventbrite.ie/e/deirdre-okane-work-in-progress-at-the-coco-comedy-club-tickets-1977028681005",
-    "verifiedAt": "2026-07-28",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "desc": "Sold out at time of listing."
   },
@@ -1693,7 +604,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1710,6 +621,19 @@
     "priceConfirmed": false
   },
   {
+    "v": "coco",
+    "t": "Stand-Up Comedy Club: Thursday Showcase",
+    "type": "Club night",
+    "start": "2026-09-17T20:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996608452",
+    "sourceUrl": "https://www.eventbrite.ie/e/stand-up-comedy-club-thursday-showcase-tickets-1990996608452",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
     "v": "craicden",
     "t": "Thursday at Craic Den Comedy Club",
     "type": "Club night",
@@ -1722,7 +646,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1739,7 +663,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1756,7 +680,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1773,7 +697,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1790,7 +714,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1807,7 +731,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1821,8 +745,22 @@
     "venueNote": "Workmans Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
+  },
+  {
+    "v": "empire",
+    "t": "THE EMPIRE LAUGHS BACK COMEDY CLUB",
+    "type": "Club night",
+    "start": "2026-09-22",
+    "price": 12,
+    "currency": "GBP",
+    "lineup": [],
+    "ticketUrl": "https://www.thebelfastempire.com/music-hall/the-empire-laughs-back-comedy-club-2/",
+    "sourceUrl": "https://www.thebelfastempire.com/music-hall/the-empire-laughs-back-comedy-club-2/",
+    "verifiedAt": "2026-09-05",
+    "status": "needs_review",
+    "notes": "Venue publishes doors (7.30pm), not stage time; year inferred from the printed weekday. Line-up not published."
   },
   {
     "v": "craicden",
@@ -1838,7 +776,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1855,7 +793,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1872,7 +810,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1888,7 +826,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1918,7 +856,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1934,7 +872,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1964,7 +902,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -1993,7 +931,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/9/27/thomas-green",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/9/27/thomas-green",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -2011,7 +949,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2025,8 +963,22 @@
     "venueNote": "Workmans Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
+  },
+  {
+    "v": "empire",
+    "t": "THE EMPIRE LAUGHS BACK COMEDY CLUB",
+    "type": "Club night",
+    "start": "2026-09-29",
+    "price": 12,
+    "currency": "GBP",
+    "lineup": [],
+    "ticketUrl": "https://www.thebelfastempire.com/music-hall/the-empire-laughs-back-comedy-club-3/",
+    "sourceUrl": "https://www.thebelfastempire.com/music-hall/the-empire-laughs-back-comedy-club-3/",
+    "verifiedAt": "2026-09-05",
+    "status": "needs_review",
+    "notes": "Venue publishes doors (7.30pm), not stage time; year inferred from the printed weekday. Line-up not published."
   },
   {
     "v": "craicden",
@@ -2042,7 +994,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2059,7 +1011,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2078,6 +1030,25 @@
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
     "verifiedAt": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "v": "craicden",
+    "t": "Thursday at Craic Den Comedy Club",
+    "type": "Club night",
+    "start": "2026-10-01T21:00",
+    "price": 10.5,
+    "currency": "EUR",
+    "lineup": [
+      "Breda Hegarty",
+      "Chris Watts",
+      "John O'Keeffe",
+      "Eddie Mullarkey"
+    ],
+    "venueNote": "Workman Dublin",
+    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
+    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2109,7 +1080,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2127,7 +1098,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2144,7 +1115,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2161,7 +1132,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2177,7 +1148,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2191,8 +1162,22 @@
     "venueNote": "Workmans Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
+  },
+  {
+    "v": "empire",
+    "t": "THE EMPIRE LAUGHS BACK COMEDY CLUB",
+    "type": "Club night",
+    "start": "2026-10-06",
+    "price": 12,
+    "currency": "GBP",
+    "lineup": [],
+    "ticketUrl": "https://www.thebelfastempire.com/music-hall/the-empire-laughs-back-comedy-club-4/",
+    "sourceUrl": "https://www.thebelfastempire.com/music-hall/the-empire-laughs-back-comedy-club-4/",
+    "verifiedAt": "2026-09-05",
+    "status": "needs_review",
+    "notes": "Venue publishes doors (7.30pm), not stage time; year inferred from the printed weekday. Line-up not published."
   },
   {
     "v": "craicden",
@@ -2209,7 +1194,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2243,7 +1228,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2261,7 +1246,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2279,7 +1264,7 @@
     "venueNote": "Workmans Club Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2296,7 +1281,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2313,7 +1298,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2330,7 +1315,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2347,7 +1332,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2361,8 +1346,22 @@
     "venueNote": "Workmans Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
+  },
+  {
+    "v": "empire",
+    "t": "THE EMPIRE LAUGHS BACK COMEDY CLUB",
+    "type": "Club night",
+    "start": "2026-10-13",
+    "price": 12,
+    "currency": "GBP",
+    "lineup": [],
+    "ticketUrl": "https://www.thebelfastempire.com/music-hall/the-empire-laughs-back-comedy-club-5/",
+    "sourceUrl": "https://www.thebelfastempire.com/music-hall/the-empire-laughs-back-comedy-club-5/",
+    "verifiedAt": "2026-09-05",
+    "status": "needs_review",
+    "notes": "Venue publishes doors (7.30pm), not stage time; year inferred from the printed weekday. Line-up not published."
   },
   {
     "v": "craicden",
@@ -2378,7 +1377,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2407,7 +1406,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/14/rory-ohanlon-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/14/rory-ohanlon-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -2425,7 +1424,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2454,7 +1453,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/15/william-thompson-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/15/william-thompson-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -2473,7 +1472,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2490,7 +1489,7 @@
     "venueNote": "Workmans Club Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2506,7 +1505,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2538,7 +1537,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2551,7 +1550,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/17/deirdre-okane-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/17/deirdre-okane-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -2568,7 +1567,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2600,7 +1599,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2614,8 +1613,22 @@
     "venueNote": "Workmans Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
+  },
+  {
+    "v": "dolans",
+    "t": "Madison Cawley: The Maddie Show (Comedy)",
+    "type": "Tour show",
+    "start": "2026-10-20T19:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/20/madison-cawley-the-maddie-show-comedy",
+    "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/20/madison-cawley-the-maddie-show-comedy",
+    "verifiedAt": "2026-09-05",
+    "status": "published",
+    "priceConfirmed": false
   },
   {
     "v": "craicden",
@@ -2628,7 +1641,23 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
+    "v": "craicden",
+    "t": "Rhys Darby",
+    "type": "Club night",
+    "start": "2026-10-20T20:30",
+    "price": 35,
+    "currency": "EUR",
+    "lineup": [
+      "Rhys Darby"
+    ],
+    "venueNote": "Workmans Club Dublin",
+    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
+    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2657,7 +1686,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2670,7 +1699,21 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/5/19/paddy-mcdonnell-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/5/19/paddy-mcdonnell-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
+    "status": "published",
+    "priceConfirmed": false
+  },
+  {
+    "v": "dolans",
+    "t": "Jack Dee: Jack's Joke Show (comedy)",
+    "type": "Tour show",
+    "start": "2026-10-22T19:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/22/jack-dee-jacks-joke-show-comedy",
+    "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/22/jack-dee-jacks-joke-show-comedy",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -2685,7 +1728,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2702,7 +1745,7 @@
     "venueNote": "Workmans Club Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2718,7 +1761,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2734,7 +1777,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2750,7 +1793,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2764,7 +1807,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2780,7 +1823,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2794,7 +1837,7 @@
     "venueNote": "Workmans Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2807,7 +1850,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/7/georgie-carroll-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/7/georgie-carroll-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -2824,7 +1867,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2844,6 +1887,20 @@
     "priceConfirmed": false
   },
   {
+    "v": "dolans",
+    "t": "RHYS DARBY: UNHINGED (COMEDY)",
+    "type": "Tour show",
+    "start": "2026-10-28T19:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/28/rhys-darby-unhinged-comedy",
+    "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/28/rhys-darby-unhinged-comedy",
+    "verifiedAt": "2026-09-05",
+    "status": "published",
+    "priceConfirmed": false
+  },
+  {
     "v": "craicden",
     "t": "Wednesday at Craic Den Comedy Club",
     "type": "Club night",
@@ -2856,7 +1913,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2873,7 +1930,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2890,7 +1947,7 @@
     "venueNote": "Workmans Club Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2906,7 +1963,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2922,7 +1979,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2953,7 +2010,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2967,7 +2024,7 @@
     "venueNote": "Workmans Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2983,7 +2040,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -2999,7 +2056,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3013,7 +2070,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3044,7 +2101,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3061,7 +2118,7 @@
     "venueNote": "Workmans Club Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3077,7 +2134,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3093,7 +2150,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3109,7 +2166,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3124,7 +2181,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3142,7 +2199,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3171,7 +2228,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/11/13/gearoid-farrelly-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/11/13/gearoid-farrelly-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -3189,7 +2246,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3206,7 +2263,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3223,7 +2280,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3239,7 +2296,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3256,7 +2313,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3287,7 +2344,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3304,7 +2361,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3321,7 +2378,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3337,7 +2394,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3366,7 +2423,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/11/26/mario-rosenstock",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/11/26/mario-rosenstock",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -3381,7 +2438,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3394,7 +2451,7 @@
     "lineup": [],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3407,7 +2464,7 @@
     "lineup": [],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3420,7 +2477,7 @@
     "lineup": [],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3433,7 +2490,7 @@
     "lineup": [],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3463,7 +2520,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3479,7 +2536,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3494,7 +2551,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3509,7 +2566,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3524,7 +2581,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3539,7 +2596,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3552,7 +2609,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/28/paddy-young-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2026/10/28/paddy-young-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -3567,7 +2624,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3580,7 +2637,7 @@
     "lineup": [],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3593,7 +2650,7 @@
     "lineup": [],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3606,7 +2663,7 @@
     "lineup": [],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3619,7 +2676,7 @@
     "lineup": [],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3636,7 +2693,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3652,7 +2709,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3668,7 +2725,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3684,7 +2741,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3700,7 +2757,7 @@
     ],
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3729,7 +2786,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/1/7/david-odoherty-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/1/7/david-odoherty-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -3759,7 +2816,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/1/9/andrew-ryan-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/1/9/andrew-ryan-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -3773,7 +2830,21 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/1/14/sinead-culbert-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/1/14/sinead-culbert-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
+    "status": "published",
+    "priceConfirmed": false
+  },
+  {
+    "v": "dolans",
+    "t": "David McSavage (Comedy)",
+    "type": "Tour show",
+    "start": "2027-01-22T19:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/1/22/david-mcsavage-comedy",
+    "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/1/22/david-mcsavage-comedy",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -3787,9 +2858,24 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/1/23/chris-kent-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/1/23/chris-kent-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
+  },
+  {
+    "v": "craicden",
+    "t": "Ophélie Hocquard",
+    "type": "Club night",
+    "start": "2027-02-24T19:00",
+    "price": 13,
+    "currency": "EUR",
+    "lineup": [
+      "Ophélie Hocquard - Claude"
+    ],
+    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
+    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
   },
   {
     "v": "craicden",
@@ -3802,7 +2888,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3816,7 +2902,7 @@
     "venueNote": "Workman Dublin",
     "ticketUrl": "https://craicdencomedyclub.com/all-events/",
     "sourceUrl": "https://craicdencomedyclub.com/all-events/",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published"
   },
   {
@@ -3829,7 +2915,21 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/3/19/bernard-oshea-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/3/19/bernard-oshea-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
+    "status": "published",
+    "priceConfirmed": false
+  },
+  {
+    "v": "dolans",
+    "t": "Seann Walsh (comedy)",
+    "type": "Tour show",
+    "start": "2027-03-22T19:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/3/22/seann-walsh-comedy",
+    "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/3/22/seann-walsh-comedy",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -3843,7 +2943,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/3/26/shane-daniel-byrne-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/3/26/shane-daniel-byrne-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -3857,7 +2957,7 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/4/11/deirdre-okane-all-the-rage-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/4/11/deirdre-okane-all-the-rage-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -3871,7 +2971,35 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/4/16/sharon-mannion-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/4/16/sharon-mannion-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
+    "status": "published",
+    "priceConfirmed": false
+  },
+  {
+    "v": "dolans",
+    "t": "Jason Byrne (comedy)",
+    "type": "Tour show",
+    "start": "2027-04-21T19:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/4/21/jason-byrne-comedy",
+    "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/4/21/jason-byrne-comedy",
+    "verifiedAt": "2026-09-05",
+    "status": "published",
+    "priceConfirmed": false
+  },
+  {
+    "v": "dolans",
+    "t": "Jason Byrne (comedy)",
+    "type": "Tour show",
+    "start": "2027-04-22T19:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/4/21/jason-byrne-comedy-wk6wx",
+    "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/4/21/jason-byrne-comedy-wk6wx",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
   },
@@ -3885,8 +3013,52 @@
     "lineup": [],
     "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/5/6/gary-delaney-comedy",
     "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/5/6/gary-delaney-comedy",
-    "verifiedAt": "2026-07-29",
+    "verifiedAt": "2026-09-05",
     "status": "published",
     "priceConfirmed": false
+  },
+  {
+    "v": "dolans",
+    "t": "Ruby Wax (comedy)",
+    "type": "Tour show",
+    "start": "2027-05-21T19:30",
+    "price": null,
+    "currency": "EUR",
+    "lineup": [],
+    "ticketUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/5/21/ruby-wax-comedy",
+    "sourceUrl": "https://www.dolans.ie/gigs-events-live-music-listings/2027/5/21/ruby-wax-comedy",
+    "verifiedAt": "2026-09-05",
+    "status": "published",
+    "priceConfirmed": false
+  },
+  {
+    "v": "craicden",
+    "t": "Eddie Mullarkey",
+    "type": "Club night",
+    "start": "2027-06-01T19:00",
+    "price": 13,
+    "currency": "EUR",
+    "lineup": [
+      "Eddie Mullarkey"
+    ],
+    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
+    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
+  },
+  {
+    "v": "craicden",
+    "t": "Matt Richardson",
+    "type": "Club night",
+    "start": "2027-11-28T18:30",
+    "price": 18,
+    "currency": "EUR",
+    "lineup": [
+      "Matt Richardson"
+    ],
+    "ticketUrl": "https://craicdencomedyclub.com/all-events/",
+    "sourceUrl": "https://craicdencomedyclub.com/all-events/",
+    "verifiedAt": "2026-09-05",
+    "status": "published"
   }
 ]
